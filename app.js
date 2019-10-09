@@ -24,7 +24,7 @@ inquirer
         break;
 
       case "Spotify-This-Song":
-        console.log("user chose spotify-this-song");
+      spotifyThis()
         break;
 
       case "Movie-This":
@@ -60,4 +60,9 @@ function concertThis() {
 
         });
     })
+}
+
+function spotifyThis(){
+  console.log("user chose spotify-this-song");
+
 }
