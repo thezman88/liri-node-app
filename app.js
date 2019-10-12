@@ -102,7 +102,6 @@ function spotifyThis() {
 
 
 function movieThis() {
-  // console.log("user chose Movie-This");
   inquirer
     .prompt([
       // Here we create a basic text prompt.
@@ -136,4 +135,30 @@ function movieThis() {
 function whatItSays() {
   console.log("user chose Do-what-it-says");
 
+  // This block of code will read from the "movies.txt" file.
+  // It's important to include the "utf8" parameter or the code will provide stream data (garbage)
+  // The code will store the contents of the reading inside the variable "data"
+  fs.readFile("random.txt", "utf8", function(error, data) {
+
+    // If the code experiences any errors it will log the error to the console.
+    if (error) {
+      return console.log(error);
+    }
+
+    var dataArr = data.split(",");
+    var command = dataArr[0];
+    var argument = dataArr[1];
+
+    // We will then re-display the content as an array for later use.
+    console.log(dataArr);
+
+    switch (command) {
+      case "spotify-this-song":
+         // run spotifythis with argument
+         spotifyThis(argument);
+    }
+
+
+
+  });
 }
