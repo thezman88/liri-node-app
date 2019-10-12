@@ -1,5 +1,10 @@
+const dotenv = require("dotenv").config();
+var keys = require("./keys.js");
+
 const inquirer = require('inquirer');
-const axios = require('axios')
+const axios = require('axios');
+var fs = require("fs");
+
 
 inquirer
   .prompt([{
@@ -72,10 +77,7 @@ function spotifyThis() {
     ]).then(function(inquirerResponse) {
       var Spotify = require('node-spotify-api');
 
-      var spotify = new Spotify({
-        id: '99a2f862a4de42139c1a77fb17a6e94e',
-        secret: '262c286117cf4beaa1c34c337a845161'
-      });
+      var spotify = new Spotify(keys.spotify);
 
       spotify.search({
         type: 'track',
