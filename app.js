@@ -24,7 +24,7 @@ inquirer
         break;
 
       case "Spotify-This-Song":
-        spotifyThis()
+        commandRunner("spotify-this-song", null);
         break;
 
       case "Movie-This":
@@ -152,13 +152,16 @@ function whatItSays() {
     // We will then re-display the content as an array for later use.
     console.log(dataArr);
 
-    switch (command) {
-      case "spotify-this-song":
-         // run spotifythis with argument
-         spotifyThis(argument);
-    }
+
 
 
 
   });
+}
+function commandRunner(commandName, argumentToPass){
+  switch (commandName) {
+    case "spotify-this-song":
+       // run spotifythis with argument
+       spotifyThis();
+  }
 }
