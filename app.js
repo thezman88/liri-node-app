@@ -118,14 +118,14 @@ function movieThis() {
       // We then run the request with axios module on a URL with a JSON
       axios.get(`http://www.omdbapi.com/?t=${movieResponse.movie}&apikey=trilogy`)
         .then((response) => {
-          console.log("Title: "+response.data.Title);
-          console.log("Release Year: "+response.data.Released);
-          console.log("IMDB Rating: "+response.data.imdbRating);
-          console.log("Rotton Tomatoes Rating: "+response.data.Ratings[1].Value);
-          console.log("Countrys Filmed In:"+response.data.Country);
-          console.log("Languages: "+response.data.Language);
-          console.log("Plot: "+response.data.Plot);
-          console.log("Actors: "+response.data.Actors);
+          console.log("Title: " + response.data.Title);
+          console.log("Released: " + response.data.Released);
+          console.log("IMDB Rating: " + response.data.imdbRating);
+          console.log("Rotton Tomatoes Rating: " + response.data.Ratings[1].Value);
+          console.log("Countrys Filmed In:" + response.data.Country);
+          console.log("Languages: " + response.data.Language);
+          console.log("Plot: " + response.data.Plot);
+          console.log("Actors: " + response.data.Actors);
         });
     })
 
