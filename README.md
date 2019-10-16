@@ -3,8 +3,8 @@ LIRI is a command line node app that gives you data based off the following comm
 
 
 spotify this:
-requests the spotify API for :
 
+requests the spotify API for :
 Artist(s)
 The song's name
 A preview link of the song from Spotify
@@ -19,6 +19,16 @@ Date of the Event (use moment to format this as "MM/DD/YYYY")
 ![](liri-concert-this.gif)
 
 movie this:
+requests the OMDB API for :
+Title of the movie.
+Year the movie came out.
+IMDB Rating of the movie.
+Rotten Tomatoes Rating of the movie.
+Country where the movie was produced.
+Language of the movie.
+Plot of the movie.
+Actors in the movie.
+
 ![](liri-movie-this.gif)
 
 do what it says:
