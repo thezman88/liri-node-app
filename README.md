@@ -1,13 +1,15 @@
-# liri-node-app
+# LIRI-BOT 
+LIRI is a command line node app that gives you data based off the following commands:
 
-spotify this command:
+
+spotify this:
 ![](liri-spotify-this.gif)
 
-concert this command:
+concert this:
 ![](liri-concert-this.gif)
 
-movie this command:
+movie this:
 ![](liri-movie-this.gif)
 
-do what it says command:
+do what it says:
 ![](liri-what-says.gif)
