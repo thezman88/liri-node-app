@@ -28,8 +28,8 @@ Country where the movie was produced.
 Language of the movie.
 Plot of the movie.
 Actors in the movie.
-
 ![](liri-movie-this.gif)
 
 do what it says:
+LIRI will use the text from “random.txt” and call and run Spotify-this-song for “I want it That way”.
 ![](liri-what-says.gif)
