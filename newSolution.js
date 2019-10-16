@@ -1,3 +1,33 @@
+// function commandRunner(commandName, argumentToPass){
+//   switch (commandName) {
+//     case "spotify-this-song":
+//        // run spotifythis with argument
+//        spotifyThis();
+//     break;
+//
+//     case ""
+//
+//   }
+// }
+//
+//
+//
+//
+// case "Concert-this":
+//   concertThis()
+//   break;
+//
+// case "Spotify-This-Song":
+//   commandRunner("spotify-this-song", null);
+//   break;
+//
+// case "Movie-This":
+//   movieThis()
+//   break;
+//
+// case "Do-What-It-Says":
+//   whatItSays()
+//   break;
 const dotenv = require("dotenv").config();
 var keys = require("./keys.js");
 
@@ -163,5 +193,9 @@ function commandRunner(commandName, argumentToPass){
     case "spotify-this-song":
        // run spotifythis with argument
        spotifyThis();
+    break;
+
+    case ""
+
   }
 }
