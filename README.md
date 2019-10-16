@@ -3,7 +3,6 @@ LIRI is a command line node app that gives you data based off the following comm
 
 
 spotify this:
-
 requests the spotify API for :
 Artist(s)
 The song's name
